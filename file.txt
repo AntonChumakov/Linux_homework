@@ -1,0 +1,18 @@
+   0 cd /home/
+   1 mkdir user/start
+   2 mkdir user
+   3 cd 
+   4 cd /home/user/
+   5 mkdir start
+   6 cd /home/user/start/
+   7 touch 1.txt
+   8 ls
+   9 echo 'Start' > /home/user/start/1.txt 
+  10 date >> /home/user/start/1.txt 
+  11 cd
+  12 mkdir -p /opt/task/ cp /home/user/start/1.txt /opt/task/start.txt
+  13 mkdir -p /opt/task/
+  14 cp /home/user/start/1.txt /opt/task/start.txt
+  15 find / -type f -print0 | xargs -0 tail -n 4 >> /opt/task/start.txt
+  16 history
+  17 history > file.txt
